@@ -1,0 +1,10 @@
+environment: <TimeLimit<OrderEnforcing<FrozenLakeEnv<FrozenLake-v1>>>> 
+                 epsilon: 0.99 
+                 min_epsilon: 0.05 
+                 gamma: 0.97 
+                 alpha: 0.001 
+                 buffer_maxlen: 1000 
+                 episodes: 250 
+                 repetitions: 5 
+                 batch_size: 50 
+                 decay_rate: 0.99
