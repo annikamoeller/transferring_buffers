@@ -6,11 +6,6 @@ import matplotlib.pyplot as plt
 import sys
 import pickle
 
-# def backup_model(model, episode, network_type):
-#     backup_file = f"checkpoints_{network_type}/model_{episode}.h5"
-#     print(f"Backing up model to {backup_file}")
-#     model.save(backup_file)
-
 def backup_model(model, folder_name, rep):
     backup_file = f"{folder_name}/model_{rep}.h5"
     model.save(backup_file)

@@ -235,7 +235,7 @@ while True:  # Run until solved
 
     episode_count += 1
 
-    if frame_count >= 10000000:#if avg_last_100 > 18:  # Condition to consider the task solved
+    if frame_count >= 10000000: # Condition to consider the task solved
         print("Solved at episode {}!".format(episode_count))
         savetxt(progress_path, reward_tracker)
         savetxt(avg100_progress_path, avg_reward_tracker)

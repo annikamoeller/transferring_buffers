@@ -18,7 +18,6 @@ folder_name = args.folder_name
 run_type = args.run_type 
 
 # agent params
-#2env = gym.make('lunarlander-v4')
 env = gym.make("lunarlander-v4")
 state_space = env.observation_space.shape[0] #states
 action_space = env.action_space.n # actions
@@ -28,7 +27,6 @@ epsilon = 1.0
 min_epsilon = 0.01
 decay_rate = 0.995 # per episode
 buffer_maxlen = 100000
-#reg_factor = 0.001
 
 # training params
 batch_size = 128

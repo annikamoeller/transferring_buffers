@@ -19,21 +19,21 @@ def plot(arrays, labels, path):
     plt.ylabel('Reward', fontsize=18)
     plt.legend()
     plt.savefig(path)
-##
-##noslip4x4_slip4x4 = loadtxt('noslip4x4_with_slip4x4/all_progress_copy.csv')
-##slip4x4_noslip4x4 = []
-##slip4x4 = []
-##noslip4x4 = []
-##for idx in range(5):
-##    slip4x4_noslip4x4.append(np.loadtxt(f'slip4x4_with_noslip4x4/progress_{idx}'))
-##    slip4x4.append(np.loadtxt(f'slip_4x4/progress_{idx}'))
-##    noslip4x4.append(np.loadtxt(f'no_slip_4x4/progress_{idx}'))
-##
-##slip4x4_noslip4x4 = np.array(slip4x4_noslip4x4)
-##slip4x4 = np.array(slip4x4)
-##noslip4x4 = np.array(noslip4x4)
-##arrays = [slip4x4, slip4x4_noslip4x4, noslip4x4, noslip4x4_slip4x4]
-##labels = ['slip', 'slip[no-slip]', 'no-slip', 'no-slip[slip]' ]
+
+#noslip4x4_slip4x4 = loadtxt('noslip4x4_with_slip4x4/all_progress_copy.csv')
+#slip4x4_noslip4x4 = []
+#slip4x4 = []
+#noslip4x4 = []
+#for idx in range(5):
+#    slip4x4_noslip4x4.append(np.loadtxt(f'slip4x4_with_noslip4x4/progress_{idx}'))
+#    slip4x4.append(np.loadtxt(f'slip_4x4/progress_{idx}'))
+#    noslip4x4.append(np.loadtxt(f'no_slip_4x4/progress_{idx}'))
+#
+#slip4x4_noslip4x4 = np.array(slip4x4_noslip4x4)
+#slip4x4 = np.array(slip4x4)
+#noslip4x4 = np.array(noslip4x4)
+#arrays = [slip4x4, slip4x4_noslip4x4, noslip4x4, noslip4x4_slip4x4]
+#labels = ['slip', 'slip[no-slip]', 'no-slip', 'no-slip[slip]' ]
 
 noslip8x8_slip_8x8 = []
 slip8x8_noslip8x8 = []

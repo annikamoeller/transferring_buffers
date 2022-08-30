@@ -1,5 +1,5 @@
 import gym
-from Experience import Experience
+from ReplayBuffer import *
 from Utils import *
 from DQN import DQN
 import numpy as np

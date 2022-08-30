@@ -1,4 +1,4 @@
-from ReplayBuffer import ReplayBuffer
+from ReplayBuffer import *
 import tensorflow as tf
 from tensorflow import keras
 from tensorflow.keras.models import Sequential, load_model

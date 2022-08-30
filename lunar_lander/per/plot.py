@@ -31,10 +31,6 @@ for idx in range(5):
     gravity5.append(np.loadtxt(f'per_gravity_5_5runs/progress_{idx}'))
     g10with5.append(np.loadtxt(f'per_gravity10_inject5_5runs/progress_{idx}'))
     g5with10.append(np.loadtxt(f'per_gravity5_inject10_5runs/progress_{idx}'))
-    # gravity10.append(np.loadtxt(f'per_gravity_10_5runs/avg_reward_{idx}'))
-    # gravity5.append(np.loadtxt(f'per_gravity_5_5runs/avg_reward_{idx}'))
-    # g10with5.append(np.loadtxt(f'per_gravity10_inject5_5runs/avg_reward_{idx}'))
-    # g5with10.append(np.loadtxt(f'per_gravity5_inject10_5runs/avg_reward_{idx}'))
 
 gravity10 = np.array(gravity10)
 gravity5 = np.array(gravity5)
@@ -44,6 +40,3 @@ g5with10 = np.array(g5with10)
 arrays = [gravity10, g10with5, gravity5, g5with10]
 labels = ['gravity-10', 'gravity-10[gravity-5]', 'gravity-5',  'gravity-5[gravity-10]']
 plot(arrays, labels, 'lunarlander_per')
-# arrays1 = [gravity10, g10with5]
-# labels1 = ['gravity-10', 'gravity-5 --> gravity-10']
-# plot(arrays1, labels1, 'comparison1')
